@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 2em;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt('Qual é seu nome completo?')
+        document.writeln(`Olá <strong>${nome}</strong>, seu nome tem ${nome.length} letras <br>`)
+        document.writeln(`Seu nome escrito em caixa alta: ${nome.toUpperCase()} <br>`)
+        document.write(`Seu nome escrito em caixa baixa: ${nome.toLocaleLowerCase()}`)
+    </script>
+</body>
+</html>
