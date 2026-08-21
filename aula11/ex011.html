@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrangeiro?</title>
+</head>
+<body>
+    <h1>Você é Brasileiro ou Estrangeiro?</h1>
+
+    Digite seu país de origem: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div id="resultado"></div>
+
+
+    <script>
+        function verificar(){
+            var paisOrigem = window.document.getElementById('pais').value
+            var res = window.document.querySelector('div#resultado')
+
+            if (paisOrigem == "Brasil"){
+                res.innerHTML += `<p>Você é Brasileiro</p>`
+            }else {
+                res.innerHTML += `<p>Você é estrangeiro!</p>`
+            }
+        }
+    </script>
+</body>
+</html>
